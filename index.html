@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <p class="nav-heading">SORTING<br>VISUALIZER</p>
+            <button id = "a_generate">Generate New Array!</button>
+            <div class="array-inputs">
+                <p>Change Array Size</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=40>
+                <p>Change Sorting Speed</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=2>
+            </div>
+            <div class="algos">
+                <button >Bubble Sort</button>
+                <button >Selection Sort</button>
+                <button >Insertion Sort</button>
+                <button >Merge Sort</button>
+                <button >Quick Sort</button>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <p></p>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p></p>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./js/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./js/bubbleSort.js"></script>
+    <script src="./js/selectionSort.js"></script>
+    <script src="./js/insertionSort.js"></script>
+    <script src="./js/mergeSort.js"></script>
+    <script src="./js/quickSort.js"></script>
+</body>
+
+
+</html>
